@@ -1,12 +1,12 @@
 #include "zk_chat.h"
 
 
-zkChat* zkChat::_instance = nullptr;
+zkChat* zkChat::_instance = new zkChat;
 
 zkChat* zkChat::GetInstance() {
-    if (_instance == nullptr) {
-       _instance = new zkChat;
-    }
+    // if (_instance == nullptr) {
+    //    _instance = new zkChat;
+    // }
     return _instance;
 
 }
